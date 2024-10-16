@@ -42,7 +42,7 @@
 -A ufw-before-input -p udp -d 239.255.255.250 --dport 1900 -j ACCEPT
 
 COMMIT
- 
+
 *nat
 :POSTROUTING ACCEPT [0:0]
 -A POSTROUTING -s 10.8.0.0/24 -o wlan -j MASQUERADE
